@@ -1,0 +1,34 @@
+# Скопируйте этот файл в config.yaml и заполните его на сервере.
+# config.yaml не коммитится и не попадает в образ: контейнер читает его с диска.
+#
+# Обязательно перечислите биржи. Остальные ключи можно не указывать:
+# тогда действуют запасные значения в коде. Числа порогов в репозиторий не кладите.
+# Смысл полей — в README.md, правила сообщений — в docs/messages.md.
+#
+# flow:
+#   r_enter, r_exit, z_min, z_exit, confirmations
+#   alert_cooldown_sec, default_timeframes, pushover_cooldown_sec
+#   data_stall_sec, max_watches, history_sec
+# big:
+#   window_minutes, k_multiplier, aggregate_ms, floor_usd
+#   min_samples, most_liquid_cache_sec, summary_minutes
+#   у монеты ключ big.usd задаёт абсолютный порог крупной сделки
+# coins:
+#   SOL:
+#     r_enter: ...
+#     big:
+#       usd: ...
+# telegram:
+#   min_interval_sec, max_queue, request_timeout_sec
+# reconnect:
+#   base_delay, max_delay, max_attempts_before_pause, resume_after_sec
+# database:
+#   pool_size, max_overflow, pool_timeout, pool_recycle
+
+coins: {}
+
+bucket:
+  seconds: 60
+
+exchanges:
+  enabled: []

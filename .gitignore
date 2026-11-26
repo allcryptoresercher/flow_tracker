@@ -1,0 +1,13 @@
+.env
+config.yaml
+ТЗ*.md
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.idea/
+.vscode/
+*.sql.gz
+backups/
